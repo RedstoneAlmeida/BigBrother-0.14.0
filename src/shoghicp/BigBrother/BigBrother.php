@@ -106,7 +106,7 @@ class BigBrother extends PluginBase implements Listener{
 	}
 
 	protected function enableServer(){
-		$this->getLogger()->info("Starting Minecraft: PC server on ".($this->getIp() === "0.0.0.0" ? "*" : $this->getIp()).":".$this->getPort()." version ".MCInfo::VERSION);
+		$this->getLogger()->info("Starting Minecraft: PC server on: ".($this->getIp() === "0.0.0.0" ? "*" : $this->getIp()).":".$this->getPort()." version ".MCInfo::VERSION);
 
 		$disable = true;
 		foreach($this->getServer()->getInterfaces() as $interface){
